@@ -13,21 +13,20 @@
 }
 
 header{
+  background-color: var(--dark-khaki);
   display: flex;
   justify-content: space-between;
 }
 
 
-
-
 .menuIcon{
   color: var(--straw-gold);
-  background-color: var(--pitch-black);
+  background-color: var(--dark-khaki);
 }
 
 .closeIcon{
   color: var(--straw-gold);
-  background-color: var(--pitch-black);
+  background-color: var(--dark-khaki);
 }
 
 #headerTitle{
@@ -35,6 +34,65 @@ header{
   padding: 5px;
   font-size: 2rem;
 }
+
+#bossTable{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 60px;
+}
+
+#bossTable > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#imgSoulOfCinder{
+  width: 10rem;
+}
+
+#contact{
+  background-color: var(--dark-khaki);
+}
+
+#contactForm{
+  /* margin: 2rem; */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#contactForm input{
+  margin-bottom: 2rem;
+  background-color: var(--carbon-black);
+  
+}
+
+#message{
+  margin-bottom: 2rem;
+  background-color: var(--carbon-black);
+}
+
+#send{
+  color: var(--straw-gold);
+  max-width: 10rem;
+  align-self: flex-end;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--dark-khaki);
+  }
+
+  .footer-content div a{
+    padding-right: 2rem;
+    color: var(--straw-gold);
+    text-decoration: none;
+  }
 
 body{
   background-color: var(--pitch-black);
@@ -109,11 +167,11 @@ body{
 .hamburger {
     position: fixed;
     z-index: 100;
-    top: 1rem;
+    top: 1.5rem;
     right: 1rem;
     padding: 4px;
-    border: black solid 1px;
-    background: var(--pitch-black);
+    border: 1px;
+    background: var(--dark-khaki);
     cursor: pointer;
   }
 }
@@ -121,9 +179,15 @@ body{
 @media only screen and (min-width: 760px){
 
   header{
-    margin-left: 30px;
-    margin-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
+
+  main > h1{
+    margin: 65px;
+    font-size: 2rem;
+  }
+
 
   #mainImgV{
     display: none;
@@ -131,6 +195,8 @@ body{
   #mainImgH{
     margin-top: 10px;
     margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
     width: 100%;
   }
 
