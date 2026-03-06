@@ -67,10 +67,12 @@ header{
 #contactForm input{
   margin-bottom: 2rem;
   background-color: var(--carbon-black);
+  color: var(--straw-gold);
   
 }
 
 #message{
+  color: var(--straw-gold);
   margin-bottom: 2rem;
   background-color: var(--carbon-black);
 }
